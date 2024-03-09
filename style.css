@@ -64,16 +64,16 @@ head, body{
 }
 
 .page1>h1{
-    font-size: 17vh;
+    font-size: 7.5vw;
     font-weight: 500;
-    letter-spacing: -5px;
+    letter-spacing: -3px;
     margin-top: 20vh;
-    margin-left: 20vh;
+    margin-left: 18.5vh;
 }
 
 .page1>h2{
-    font-size: 18vh;
-    letter-spacing: -5px;
+    font-size: 8vw;
+    letter-spacing: -3px;
     font-weight: 500;
     margin-left: 59vh;
     margin-top: -2vh;
@@ -93,7 +93,56 @@ video{
 }
 
 .page2{
-    height: 100vh;
+    min-height: 110vh;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
+    padding: 7vw 5.5vw;
+    border-bottom: 1px solid #2c2b2b;
+}
+
+.page2 h1{
+    font-size: 6vw;
+    font-weight: 500;
+    margin-bottom: 6vw;
+}
+
+#page2content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40%;
+}
+
+#p2leftcontent{
+    /* background-color: purple; */
+    height: 50vh;
+    width: 25vw;
+}
+
+#p2leftcontent h2{
+    font-size: 2.7vw;
+    font-weight: 400;
+    line-height: 6.9vh;
+}
+
+#p2rightcontent{
+    /* background-color: blue; */
+    width: 20vw;
+    height: 50vh;
+}
+
+#p2rightcontent button{
+    color: #000;
+    background-color: #EDBFFF;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    margin-top: 2vh;
+    padding: 0.5vh 0;
+}
+
+#p2rightcontent button:hover{
+    background-color: #000;
+    color: #fff;
+    transition: all ease 0.5s;
 }
