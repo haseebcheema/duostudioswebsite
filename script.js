@@ -33,15 +33,16 @@ init()
 
 // used gsap for animations 
 
+// timeline one for multiple animations
 var tl= gsap.timeline({
     scrollTrigger: {
-                trigger: ".page1>h1",
-                scroller: ".main",
-                // markers: true,
-                start: "top 23%",
-                end: "top 0",
-                scrub: 3
-            }
+        trigger: ".page1>h1",
+        scroller: ".main",
+        // markers: true,
+        start: "top 23%",
+        end: "top 0",
+        scrub: 3
+    }
 })
 
 // animate h1
@@ -58,3 +59,21 @@ tl.to(".page1>h2",{
 tl.to(".page1 video",{
     width: "98%"
 }, "anim")
+
+// timeline two
+
+var tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page1>h1",
+        scroller: ".main",
+        // markers: true,
+        start: "top -100%",
+        end: "top 0",
+        scrub: 5
+    }
+})
+
+// animate background color
+tl2.to(".main", {
+    backgroundColor: "#fff",
+})
