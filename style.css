@@ -22,7 +22,7 @@ head, body{
 
 .page1{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #nav{
@@ -77,4 +77,14 @@ head, body{
     font-weight: 500;
     margin-left: 58vh;
     margin-top: -2vh;
+}
+
+video{
+    height: 100%;
+    width: 60%;
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%); */
+    margin-left: 20%;
+    margin-top: 6%;
 }
