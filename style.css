@@ -64,18 +64,18 @@ head, body{
 }
 
 .page1>h1{
-    font-size: 18vh;
+    font-size: 17vh;
     font-weight: 500;
     letter-spacing: -5px;
     margin-top: 20vh;
-    margin-left: 15vh;
+    margin-left: 20vh;
 }
 
 .page1>h2{
-    font-size: 19vh;
+    font-size: 18vh;
     letter-spacing: -5px;
     font-weight: 500;
-    margin-left: 58vh;
+    margin-left: 59vh;
     margin-top: -2vh;
 }
 
@@ -85,6 +85,15 @@ video{
     /* position: absolute;
     left: 50%;
     transform: translateX(-50%); */
-    margin-left: 20%;
+    /* margin-left: 20%; */
     margin-top: 6%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
 }
