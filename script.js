@@ -36,19 +36,22 @@ var crsr = document.querySelector(".cursor");
 document.addEventListener("mousemove", function(dets){
     crsr.style.top = dets.y + "px";
     crsr.style.left= dets.x + "px";
+    console.log(dets)
 })
 
 // cursor movement on video of page1
-var vid = document.querySelector(".page1 video");
+var vid = document.querySelector(".page1>video");
 var textHere = document.createTextNode("SOUND ON");
 vid.addEventListener("mouseenter", function(){
     crsr.style.width = "5.85%",
     crsr.style.height = "2.6%",
     crsr.style.borderRadius = "10%",
-    crsr.style.backgroundColor = "#EDBFFF",
+    crsr.style.color = "#000",
     crsr.appendChild(textHere), 
     crsr.style.fontSize = "90%",
-    crsr.style.padding = "1px"
+    crsr.style.padding = "1px 1px 3px 1px",
+    vid.style.cursor = "pointer"
+    // vid.style.filter = "blur(0px)"
 })
 
 vid.addEventListener("mouseleave", function(){
