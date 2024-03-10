@@ -31,6 +31,14 @@ function init(){
 // function calling
 init()
 
+// cursor movement
+var crsr = document.querySelector(".cursor")
+
+document.addEventListener("mousemove", function(dets){
+    crsr.style.top = dets.y + "px";
+    crsr.style.left= dets.x + "px";
+})
+
 // used gsap for animations 
 
 // timeline one for multiple animations

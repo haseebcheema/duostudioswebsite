@@ -16,6 +16,16 @@ head, body{
     height: 100%;
 }
 
+.cursor{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: fixed;         /* important */
+    z-index: 1;
+    mix-blend-mode: difference;
+}
+
 .main{
     background-color: #0F0D0D;
 }
@@ -31,6 +41,8 @@ head, body{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    /* width: 100%;
+    height: 10vh; */
 }
 
 #nav img{
