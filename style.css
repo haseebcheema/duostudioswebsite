@@ -24,6 +24,7 @@ head, body{
     position: fixed;         /* important */
     z-index: 1;
     mix-blend-mode: difference;
+    transition: all ease 0.1s;
 }
 
 .main{
