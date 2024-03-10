@@ -40,7 +40,7 @@ document.addEventListener("mousemove", function(dets){
 })
 
 // cursor movement on video of page1
-var vid = document.querySelector(".page1>video");
+var vid = document.querySelector(".page1 video");
 var textHere = document.createTextNode("SOUND ON");
 vid.addEventListener("mouseenter", function(){
     crsr.style.width = "5.85%",
@@ -51,7 +51,6 @@ vid.addEventListener("mouseenter", function(){
     crsr.style.fontSize = "90%",
     crsr.style.padding = "1px 1px 3px 1px",
     vid.style.cursor = "pointer"
-    // vid.style.filter = "blur(0px)"
 })
 
 vid.addEventListener("mouseleave", function(){
@@ -63,8 +62,112 @@ vid.addEventListener("mouseleave", function(){
     crsr.removeChild(textHere)
 })
 
-// used gsap for animations 
+// cursor movement on videos and images of page3
+var vid1P3 = document.querySelector("#page3containertop video");
+var img1P3 = document.querySelector("#page3containertop img");
+var vid2P3 = document.querySelector("#page3containerbottom video");
+var img2P3 = document.querySelector("#page3containerbottom img");
+var textP3 = document.createTextNode("View");
 
+// for page3 top container
+vid1P3.addEventListener("mouseenter", function(){
+    crsr.style.width = "3.2%",
+    crsr.style.height = "4.2%",
+    crsr.style.borderRadius = "35%",
+    crsr.style.color = "#000",
+    crsr.appendChild(textP3), 
+    crsr.style.fontSize = "90%",
+    crsr.style.padding = "6px",
+    vid1P3.style.cursor = "pointer",
+    vid1P3.style.filter = "blur(3px)",
+    img2P3.style.transition = "all ease 1s"
+})
+
+vid1P3.addEventListener("mouseleave", function(){
+    crsr.style.borderRadius = "50%",
+    crsr.style.border = "none",
+    crsr.style.width = "15px",
+    crsr.style.height = "15px",
+    crsr.style.backgroundColor = "#fff",
+    crsr.removeChild(textP3),
+    vid1P3.style.filter = "blur(0)",
+    vid1P3.style.transition = "all ease 1s"
+})
+
+img1P3.addEventListener("mouseenter", function(){
+    crsr.style.width = "3.2%",
+    crsr.style.height = "4.2%",
+    crsr.style.borderRadius = "35%",
+    crsr.style.color = "#000",
+    crsr.appendChild(textP3), 
+    crsr.style.fontSize = "90%",
+    crsr.style.padding = "6px",
+    img1P3.style.cursor = "pointer",
+    img1P3.style.filter = "blur(3px)",
+    img2P3.style.transition = "all ease 1s"
+})
+
+img1P3.addEventListener("mouseleave", function(){
+    crsr.style.borderRadius = "50%",
+    crsr.style.border = "none",
+    crsr.style.width = "15px",
+    crsr.style.height = "15px",
+    crsr.style.backgroundColor = "#fff",
+    crsr.removeChild(textP3),
+    img1P3.style.filter = "blur(0)",
+    img1P3.style.transition = "all ease 1s"
+})
+
+// for page3 bottom container
+vid2P3.addEventListener("mouseenter", function(){
+    crsr.style.width = "3.2%",
+    crsr.style.height = "4.2%",
+    crsr.style.borderRadius = "35%",
+    crsr.style.color = "#000",
+    crsr.appendChild(textP3), 
+    crsr.style.fontSize = "90%",
+    crsr.style.padding = "6px",
+    vid2P3.style.cursor = "pointer",
+    vid2P3.style.filter = "blur(3px)",
+    img2P3.style.transition = "all ease 1s"
+})
+
+vid2P3.addEventListener("mouseleave", function(){
+    crsr.style.borderRadius = "50%",
+    crsr.style.border = "none",
+    crsr.style.width = "15px",
+    crsr.style.height = "15px",
+    crsr.style.backgroundColor = "#fff",
+    crsr.removeChild(textP3),
+    vid2P3.style.filter = "blur(0)",
+    vid2P3.style.transition = "all ease 1s"
+})
+
+img2P3.addEventListener("mouseenter", function(){
+    crsr.style.width = "3.2%",
+    crsr.style.height = "4.2%",
+    crsr.style.borderRadius = "35%",
+    crsr.style.color = "#000",
+    crsr.appendChild(textP3), 
+    crsr.style.fontSize = "90%",
+    crsr.style.padding = "6px",
+    img2P3.style.cursor = "pointer",
+    img2P3.style.filter = "blur(3px)",
+    img2P3.style.transition = "all ease 1s"
+})
+
+img2P3.addEventListener("mouseleave", function(){
+    crsr.style.borderRadius = "50%",
+    crsr.style.border = "none",
+    crsr.style.width = "15px",
+    crsr.style.height = "15px",
+    crsr.style.backgroundColor = "#fff",
+    crsr.removeChild(textP3),
+    img2P3.style.filter = "blur(0)",
+    img2P3.style.transition = "all ease 1s"
+})
+
+// used gsap for animations 
 // timeline one for multiple animations
 var tl= gsap.timeline({
     scrollTrigger: {

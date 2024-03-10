@@ -175,10 +175,11 @@ head, body{
 
 .page3{
     width: 100%;
-    min-height: 150vh;
+    min-height: 140vh;
     /* background-color: red; */
     padding: 7vw 5.5vw;
     position: relative;
+    border-bottom: 1px solid #2c2b2b;
 }
 
 .page3 h1{
@@ -193,7 +194,7 @@ head, body{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 30vh;
+    margin-bottom: 25vh;
 }
 
 #page3containertop img{
@@ -212,17 +213,23 @@ head, body{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 25vh;
+    margin-bottom: 10vh;
 }
 
 #page3containerbottom video{
     height: 65vh;
     width: 40vw;
-    margin-left: -27vw;
+    margin-left: -8vw;
     margin-top: 10vh;
 }
 
 #page3containerbottom img{
     height: 65vh;
     margin-top: -12vh;
+}
+
+.page4{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
 }
