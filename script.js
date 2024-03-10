@@ -62,14 +62,13 @@ vid.addEventListener("mouseleave", function(){
     crsr.removeChild(textHere)
 })
 
-// cursor movement on videos and images of page3
-var vid1P3 = document.querySelector("#page3containertop video");
-var img1P3 = document.querySelector("#page3containertop img");
-var vid2P3 = document.querySelector("#page3containerbottom video");
-var img2P3 = document.querySelector("#page3containerbottom img");
+
+// cursor movement on page3
 var textP3 = document.createTextNode("View");
 
-// for page3 top container
+// cursor movement on videos and images of page3 top container
+var vid1P3 = document.querySelector("#page3containertop video");
+var img1P3 = document.querySelector("#page3containertop img");
 vid1P3.addEventListener("mouseenter", function(){
     crsr.style.width = "3.2%",
     crsr.style.height = "4.2%",
@@ -118,7 +117,10 @@ img1P3.addEventListener("mouseleave", function(){
     img1P3.style.transition = "all ease 1s"
 })
 
-// for page3 bottom container
+
+// cursor movement on videos and images of page3 bottom container
+var vid2P3 = document.querySelector("#page3containerbottom video");
+var img2P3 = document.querySelector("#page3containerbottom img");
 vid2P3.addEventListener("mouseenter", function(){
     crsr.style.width = "3.2%",
     crsr.style.height = "4.2%",
