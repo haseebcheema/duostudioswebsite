@@ -34,6 +34,7 @@ head, body{
 .page1{
     width: 100%;
     min-height: 100vh;
+    padding-top: 30vh;
 }
 
 #nav{
@@ -42,8 +43,11 @@ head, body{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    /* width: 100%;
-    height: 10vh; */
+    width: 100%;
+    height: 10vh;
+    position: fixed;     /* important */
+    z-index: 2;
+    mix-blend-mode: difference;
 }
 
 #nav img{
@@ -80,7 +84,7 @@ head, body{
     font-size: 7.5vw;
     font-weight: 500;
     letter-spacing: -3px;
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
     margin-left: 18.5vh;
     cursor: context-menu;
 }
@@ -303,7 +307,7 @@ head, body{
     width: 100%;
     min-height: 100vh;
     background-color: #0F0D0D;
-    padding: 7vw 5.5vw;
+    padding: 7vw 5.5vw 8vw 5.5vw;
 }
 
 .boxHead{
@@ -331,6 +335,7 @@ head, body{
     border: 1px solid #fff;
     padding: 4px 10px 3px 10px;
     font-size: 14px;
+    transition: all ease 0.5s;
 }
 
 .boxHead button:hover{
