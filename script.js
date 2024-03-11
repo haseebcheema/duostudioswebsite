@@ -252,3 +252,17 @@ boxes.forEach(function(elems){
         crsr.style.backgroundImage = "none"
     })
 })
+
+// animation for nav
+var purpleDiv = document.querySelector("#purple");
+var navItems = document.querySelectorAll("#nav a");
+navItems.forEach(function(elems){
+    elems.addEventListener("mouseenter", function(){
+        purpleDiv.style.opacity = 1,
+        purpleDiv.style.display = "block"
+    })
+    elems.addEventListener("mouseleave", function(){
+        purpleDiv.style.opacity = 0,
+        purpleDiv.style.display = "none"
+    })
+})

@@ -27,6 +27,15 @@ head, body{
     transition: all ease 0.1s;
 }
 
+#purple{
+    width: 100vw;
+    height: 100vh;
+    background-color: #EDBFFF;
+    z-index: 3;
+    opacity: 0;
+    display: none;
+}
+
 .main{
     background-color: #0F0D0D;
 }
