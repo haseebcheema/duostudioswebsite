@@ -255,14 +255,18 @@ boxes.forEach(function(elems){
 
 // animation for nav
 var purpleDiv = document.querySelector("#purple");
+var purpleDivMarquee = document.querySelector("#purple marquee");
 var navItems = document.querySelectorAll("#nav a");
 navItems.forEach(function(elems){
+    var textHere = document.createTextNode(elems.innerText);
     elems.addEventListener("mouseenter", function(){
         purpleDiv.style.opacity = 1,
-        purpleDiv.style.display = "block"
+        purpleDiv.style.display = "block",
+        purpleDivMarquee.appendChild(textHere)
     })
     elems.addEventListener("mouseleave", function(){
         purpleDiv.style.opacity = 0,
-        purpleDiv.style.display = "none"
+        purpleDiv.style.display = "none",
+        purpleDivMarquee.removeChild(textHere)
     })
 })
