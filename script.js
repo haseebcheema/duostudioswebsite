@@ -34,9 +34,8 @@ init()
 // cursor movement on document
 var crsr = document.querySelector(".cursor");
 document.addEventListener("mousemove", function(dets){
-    crsr.style.top = dets.y + "px";
-    crsr.style.left= dets.x + "px";
-    console.log(dets)
+    crsr.style.top = dets.y + 4 + "px";
+    crsr.style.left= dets.x + 4 + "px";
 })
 
 // cursor movement on video of page1
@@ -230,4 +229,26 @@ var tl2 = gsap.timeline({
 // animate background color
 tl2.to(".main", {
     backgroundColor: "#0F0D0D",
+})
+
+// animation on page5
+var boxes = document.querySelectorAll(".box");
+boxes.forEach(function(elems){
+    var elemImg = elems.getAttribute("data-image");
+    elems.addEventListener("mouseenter", function(dets){
+        crsr.style.width = "300px",
+        crsr.style.height = "300px",
+        crsr.style.borderRadius = 0,
+        crsr.style.backgroundImage = `url(${elemImg})`,
+        crsr.style.backgroundPosition = "center",
+        crsr.style.backgroundSize = "cover"
+    })
+    elems.addEventListener("mouseleave",function(){
+        crsr.style.borderRadius = "50%",
+        crsr.style.border = "none",
+        crsr.style.width = "15px",
+        crsr.style.height = "15px",
+        crsr.style.backgroundColor = "#fff",
+        crsr.style.backgroundImage = "none"
+    })
 })

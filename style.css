@@ -239,6 +239,7 @@ head, body{
 .page4 h6{
     text-align: center;
     font-size: 1vw;
+    cursor: context-menu;
 }
 
 .page4 h6:nth-child(2){
@@ -250,6 +251,7 @@ head, body{
     justify-content: center;
     align-items: center;
     position: relative;
+    cursor: pointer;
 }
 
 .elem img{
@@ -304,6 +306,39 @@ head, body{
     padding: 7vw 5.5vw;
 }
 
+.boxHead{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding: 20px 0;
+}
+
+.boxHead h1{
+    font-size: 3vw;
+    cursor: pointer;
+}
+
+.boxHead h1>span{
+    color: #EDBFFF;
+    cursor: pointer;
+}
+
+.boxHead button{
+    background-color: transparent;
+    border-radius: 2vh;
+    border: 1px solid #fff;
+    padding: 4px 10px 3px 10px;
+    font-size: 14px;
+}
+
+.boxHead button:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
 .box{
     position: relative;
     display: flex;
@@ -313,27 +348,7 @@ head, body{
     padding: 20px 0;
 }
 
-.box h1{
-    font-size: 3vw;
-    cursor: pointer;
-}
-
-.box h1>span{
-    color: #EDBFFF;
-    cursor: pointer;
-}
-
-.box button{
-    background-color: transparent;
-    border-radius: 2vh;
-    border: 1px solid #fff;
-    padding: 4px 10px 3px 10px;
-    font-size: 14px;
-}
-
-.box button:hover{
-    background-color: #fff;
-    color: #000;
+.box:hover{
     cursor: pointer;
 }
 
