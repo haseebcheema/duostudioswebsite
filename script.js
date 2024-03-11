@@ -229,5 +229,5 @@ var tl2 = gsap.timeline({
 
 // animate background color
 tl2.to(".main", {
-    backgroundColor: "#000",
+    backgroundColor: "#0F0D0D",
 })
