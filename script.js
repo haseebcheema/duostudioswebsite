@@ -214,3 +214,20 @@ var tl2 = gsap.timeline({
 tl2.to(".main", {
     backgroundColor: "#fff",
 })
+
+// timeline three
+var tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page1>h1",
+        scroller: ".main",
+        // markers: true,
+        start: "top -435%",
+        end: "top -390%",
+        scrub: 5
+    }
+})
+
+// animate background color
+tl2.to(".main", {
+    backgroundColor: "#000",
+})
