@@ -24,16 +24,17 @@ head, body{
     position: fixed;         /* important */
     z-index: 1;
     mix-blend-mode: difference;
-    transition: all ease 0.1s;
+    transition: all ease 0s;
 }
 
 #purple{
     width: 100vw;
     height: 100vh;
     background-color: #EDBFFF;
-    z-index: 3;
+    z-index: 100;
     opacity: 0;
     display: none;
+    position: absolute;
 }
 
 #purple marquee{
@@ -66,7 +67,7 @@ head, body{
     width: 100%;
     height: 10vh;
     position: fixed;     /* important */
-    z-index: 2;
+    z-index: 101;
     mix-blend-mode: difference;
 }
 
@@ -395,9 +396,43 @@ head, body{
     color: #474646;
 }
 
-footer{
+#footer{
     position: relative;
     width: 100%;
     height: 100vh;
+    background-color: #EDBFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7vw;
+    border-bottom: 1px solid #0F0D0D;
+}
+
+#footer h2{
+    /* background-color: red; */
+    font-size: 3vw;
+    width: 65%;
+    color: #0F0D0D;
+}
+
+#footer button{
+    /* background-color: yellow; */
+    padding: 4.5vw 2vw;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+
+#footer button:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease 0.6s;
+}
+
+#useless{
+    width: 100%;
+    height: 3vh;
     background-color: #EDBFFF;
 }
