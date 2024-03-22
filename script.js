@@ -233,28 +233,6 @@ tl2.to(".main", {
     backgroundColor: "#0F0D0D",
 })
 
-// animation on page5
-var boxes = document.querySelectorAll(".box");
-boxes.forEach(function(elems){
-    var elemImg = elems.getAttribute("data-image");
-    elems.addEventListener("mouseenter", function(dets){
-        cursor.style.width = "300px",
-        cursor.style.height = "300px",
-        cursor.style.borderRadius = 0,
-        cursor.style.backgroundImage = `url(${elemImg})`,
-        cursor.style.backgroundPosition = "center",
-        cursor.style.backgroundSize = "cover"
-    })
-    elems.addEventListener("mouseleave",function(){
-        cursor.style.borderRadius = "50%",
-        cursor.style.border = "none",
-        cursor.style.width = "15px",
-        cursor.style.height = "15px",
-        cursor.style.backgroundColor = "#fff",
-        cursor.style.backgroundImage = "none"
-    })
-})
-
 // animation for nav
 var purpleDiv = document.querySelector("#purple");
 var purpleDivMarquee = document.querySelector("#purple marquee");
